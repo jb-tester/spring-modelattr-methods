@@ -17,7 +17,7 @@ public class ModelAttrsInMappingMethodsDifferentWays {
     @RequestMapping("/checkModelAttrsAddingInMappingMethod")
     public String test1(ModelMap model) {
         model.addAttribute("simple_attr1", "simple_attr1");
-        model.addAttribute(new Foo1("foo0",0));
+        model.addAttribute(new Foo0("foo0",0));
         Collection<FooService> attrs_list = new ArrayList<>(Arrays.asList(new Foo1("foo1", 1), new Foo2("foo2", 2), new Foo3("foo3", 3)));
         model.addAllAttributes(attrs_list);
         Map<String, String> attrsMap  = new HashMap<>();
