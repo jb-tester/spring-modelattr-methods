@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>m3</title>
+    <link th:href="@{/styles/m3.css}" rel="stylesheet"/>
+    
+</head>
+<body>
+<h2>@ModelAttribute - different styles </h2>
+<p th:text="${style1_method_return_value}"></p>
+<p th:text="${style2_void_method_body}"></p>
+<p th:text="${mixed_style_method_body}"></p>
+<p th:text="${mixed_style_return_value}"></p>
+
+</body>
+</html>

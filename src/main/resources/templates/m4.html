@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>m4</title>
+  <link th:href="@{/styles/m4.css}" rel="stylesheet"/>
+
+</head>
+<body>
+<h2>model attributes added in the mapping method - different styles </h2>
+<p th:text="${'addAttribute(attributeName, attributeValue) test: ' + simple_attr1}">t1</p>
+<p th:text="${'addAttribute(attributeValue) test: implicit name' + foo1}">t1</p>
+<p th:text="${'addAllAttributes(variable of Map type) test: ' + map1attr1 + ', ' + map1attr2 + ', ' + map1attr3}">t2</p>
+<p th:text="${'addAllAttributes(Map.of(key, value)) test: ' + map2attr1 + ', ' + map2attr2 + ', ' + map2attr3}">t3</p>
+<p th:text="${'addAllAttributes(variable of Collection type) test: implicit names: '+ foo1.fooStr + ', ' + foo2.fooStr + ', ' + foo3.fooStr}">t4</p>
+</body>
+</html>

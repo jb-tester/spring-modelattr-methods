@@ -1,0 +1,7 @@
+###check diff styles of model attrs adding in the mapping method
+GET http://localhost:8080/checkModelAttrsAddingInMappingMethod
+
+
+### check request parameters completion and renaming
+GET http://localhost:8080/mapv/m2?rp1=foo&rp2=bar
+
