@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>m5</title>
+  <link th:href="@{/styles/m5.css}" rel="stylesheet"/>
+
+</head>
+<body>
+<h2>model attributes added in the mapping method to MaV - different styles </h2>
+<!-- simple -->
+<p th:text="${'addAttribute(attributeName, attributeValue) test: ' + simple_attr1}">ok</p>
+<!-- implicit names -->
+<p th:text="${'addAttribute(attributeValue) test: implicit name ' + foo0.fooStr}">ok</p>
+<!-- maps -->
+<p th:text="${'addAllObjects(variable of Map type) test: ' + map3attr1 + ', ' + map3attr2 + ', ' + map3attr3}">ok</p>
+<p th:text="${'addAllObjects(Map.of(key, value)) test: ' + map4attr1 + ', ' + map4attr2 + ', ' + map4attr3}">doesn't work</p>
+
+</body>
+</html>
