@@ -9,12 +9,12 @@
 <body>
 <h2>model attributes added in the mapping method - different styles </h2>
 <!-- simple -->
-<p th:text="${'addAttribute(attributeName, attributeValue) test: ' + simple_attr1}">t1</p>
+<p th:text="${'addAttribute(attributeName, attributeValue) test: ' + simple_attr1}">ok</p>
 <!-- maps -->
-<p th:text="${'addAllAttributes(variable of Map type) test: ' + map1attr1 + ', ' + map1attr2 + ', ' + map1attr3}">t2</p>
-<p th:text="${'addAllAttributes(Map.of(key, value)) test: ' + map2attr1 + ', ' + map2attr2 + ', ' + map2attr3}">t3</p>
+<p th:text="${'addAllAttributes(variable of Map type) test: ' + map1attr1 + ', ' + map1attr2 + ', ' + map1attr3}">ok</p>
+<p th:text="${'addAllAttributes(Map.of(key, value)) test: ' + map2attr1 + ', ' + map2attr2 + ', ' + map2attr3}">doesn't work</p>
 <!-- implicit names -->
-<p th:text="${'addAttribute(attributeValue) test: implicit name ' + foo0.fooStr}">t1</p>
-<p th:text="${'addAllAttributes(variable of Collection type) test: implicit names: '+ foo1.fooStr + ', ' + foo2.fooStr + ', ' + foo3.fooStr}">t4</p>
+<p th:text="${'addAttribute(attributeValue) test: implicit name ' + foo0.fooStr}">ok</p>
+<p th:text="${'addAllAttributes(variable of Collection type) test: implicit names: '+ foo1.fooStr + ', ' + foo2.fooStr + ', ' + foo3.fooStr}">doesn't work</p>
 </body>
 </html>
