@@ -50,11 +50,12 @@ public class ModelAttrsInMappingMethodsDifferentWays {
         attrsMap.put("map3attr2", "map3attr2_value");
         attrsMap.put("map3attr3", "map3attr3_value");
         mav.addAllObjects(attrsMap);
-        mav.addAllObjects(Map.of(
+        Map<String, String> attrsMap2 = Map.of(
                 "map4attr1", "map4attr1_value",
                 "map4attr2", "map4attr2_value",
                 "map4attr3", "map4attr3_value"
-        ));
+        );
+        mav.addAllObjects(attrsMap2);
         return mav;
     }
 }
